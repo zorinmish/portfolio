@@ -1,0 +1,33 @@
+PODS:
+  - FlagKit (2.3)
+  - SQLite.swift (0.13.0):
+    - SQLite.swift/standard (= 0.13.0)
+  - SQLite.swift/standard (0.13.0)
+
+DEPENDENCIES:
+  - FlagKit (from `https://github.com/madebybowtie/FlagKit.git`, branch `master`)
+  - SQLite.swift (from `https://github.com/stephencelis/SQLite.swift.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  FlagKit:
+    :branch: master
+    :git: https://github.com/madebybowtie/FlagKit.git
+  SQLite.swift:
+    :branch: master
+    :git: https://github.com/stephencelis/SQLite.swift.git
+
+CHECKOUT OPTIONS:
+  FlagKit:
+    :commit: f12111d91902d23fd1d9cc7ad9198030b049795d
+    :git: https://github.com/madebybowtie/FlagKit.git
+  SQLite.swift:
+    :commit: 385f4350168c8154c14f82114784452f2e50001a
+    :git: https://github.com/stephencelis/SQLite.swift.git
+
+SPEC CHECKSUMS:
+  FlagKit: 19aacb92862d07172eb80c6320ab1fdf6d379433
+  SQLite.swift: a564b98c0c4082c695e56f53d463d2d42f7fe691
+
+PODFILE CHECKSUM: 5c409ed5a18d3734964bdf18801b038796d63996
+
+COCOAPODS: 1.10.2

@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  rss-02att
+
+  Created by Mykhailo Zorin on 06.09.2021.
+  
+*/
+//Settings view
+"FeedName"  = "Название страницы";
+"FeedURL"   = "URL страницы";
+"SettingsTitle"  = "Настройки";
+"SaveButton" = "Сохранить";
+"Refresh %lld feed every %@ sec" = "Обновлять экран %lld каждые %@ сек";
+
+//Notification
+"NotificationTitle" = "Заголовок";
+"NotificationSubtitle" = "Здесь будет тело с небольшим заголовком";
+
+//Test view
+"TestView" = "Тестовое окно";
+"RequestPermission" = "Запросить разрешение";
+"SendNotification" = "Отправить уведомление";
+"CheckAllData" = "Просмотреть данные";
+"DeleteAllData" = "Удалить все данные";
+
+//Alert
+"Success" = "Успех!";
+"AllChangeSaved" = "Все изменения сохранены!";
+
+//Feed view
+"Loading" = "Загрузка";
+"NoNewsURLTitle" = "Тут нет новостей";
+"NoNewsURLSubtitle" = "Введите другую ссылку";
+
+//Login view
+"Username" = "Имя пользователя";
+"Password" = "Пароль";
+"Login" = "Войти";
+
+"Incomplete form" = "Неправильная форма ввода";
+"Please fill both fields" = "Пожалуйста заполните оба поля";
+"Password too short" = "Пароль слишком короткий";
+"Password should be at least 8 characters" = "Пароль должен включать в себя как минимум 8 символов";
+"Invalid username format" = "Неправильный формат имени пользователя";
+"Use letters of the same register" = "Используйте буквы одного регистра";
+"Register" = "Зарегистрироваться";
+"Sign in" = "Впервые";

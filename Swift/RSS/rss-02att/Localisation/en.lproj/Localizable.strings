@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  rss-02att
+
+  Created by Mykhailo Zorin on 06.09.2021.
+  
+*/
+//Settings view
+"FeedName" = "Feed name";
+"FeedURL" = "Feed URL";
+"SettingsTitle" = "Settings";
+"SaveButton" = "Save";
+"Refresh %lld feed every %@ sec" = "Refresh %lld feed every %@ sec";
+
+//Notification
+"NotificationTitle" = "Title";
+"NotificationSubtitle" = "Here will be body with some piece of text";
+
+//Test view
+"TestView" = "Test view";
+"RequestPermission" = "Request permissions";
+"SendNotification" = "Send notifications";
+"CheckAllData" = "Check all data";
+"DeleteAllData" = "Delete all data";
+
+//Alert
+"Success" = "Success!";
+"AllChangeSaved" = "All changes saved!";
+
+//Feed view
+"Loading" = "Loading";
+"NoNewsURLTitle" = "No news via this link";
+"NoNewsURLSubtitle" = "Try another URL or update feed";
+
+//Login view
+"Username" = "User name";
+"Password" = "Password";
+"Login" = "Login";
+
+"Incomplete form" = "Incomplete form";
+"Please fill both fields" = "Please fill both fields";
+"Password too short" = "Password too short";
+"Password should be at least 8 characters" = "Password should be at least 8 characters";
+"Invalid username format" = "Invalid username format";
+"Use letters of the same register" = "Use letters of the same register";
+"Register" = "Register";
+"Sign in" = "Sign in";
