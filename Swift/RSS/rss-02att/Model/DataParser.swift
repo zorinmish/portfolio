@@ -64,32 +64,31 @@ class DataParser : NSObject, XMLParserDelegate
 }
 
 
-class firstTypeParseRSS {
-    var dataParser: DataParser = DataParser()
-    func parser(_ parser: XMLParser, foundCDATA CDATABlock: Data) {
-        if !dataParser.inItem { return }
+class firstTypeParseRSS : DataParser {
+    override func parser(_ parser: XMLParser, foundCDATA CDATABlock: Data) {
+        if inItem { return }
         
-        switch dataParser.currentElementName.lowercased() {
+        switch currentElementName.lowercased() {
         case "content:encoded":
-            dataParser.item.image = extractURLbySeparator(text: String(data: CDATABlock, encoding: .utf8) ?? "", sep: "\'")
+            item.image = extractURLbySeparator(text: String(data: CDATABlock, encoding: .utf8) ?? "", sep: "\'")
         default:
             break
         }
     }
     
-    func parser(_ parser: XMLParser, foundCharacters string: String) {
-        if !dataParser.inItem { return }
+    override func parser(_ parser: XMLParser, foundCharacters string: String) {
+        if inItem { return }
         
         let trimmedString = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-        switch dataParser.currentElementName.lowercased() {
+        switch currentElementName.lowercased() {
         case "title":
-            dataParser.item.title += trimmedString
+            item.title += trimmedString
         case "description":
-            dataParser.item.description += trimmedString
+            item.description += trimmedString
         case "pubdate":
-            dataParser.item.pubdate += trimmedString
+            item.pubdate += trimmedString
         case "link":
-            dataParser.item.link += trimmedString
+            item.link += trimmedString
         default:
             break
         }
