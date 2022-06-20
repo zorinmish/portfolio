@@ -7,6 +7,7 @@
 
 import Combine
 import UIKit
+import SwiftUI
 
 class ImageLoader : ObservableObject {
     @Published var image: UIImage? {
@@ -31,12 +32,11 @@ class ImageLoader : ObservableObject {
         cancel()
     }
     
-    
     func load() {
         guard !isLoading else {return}
         
         if let image = cache?[url] {
-            self.image = image
+            self.image = uncompressImage(image)
             return
         }
         
@@ -52,7 +52,11 @@ class ImageLoader : ObservableObject {
                             self?.onFinish() },
                           receiveCancel: { [weak self] in self?.onFinish() } )
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] in self?.image = $0 }
+            .sink { [weak self] in
+                if let image = $0 {
+                    self?.image = self?.compressImage(image)
+                }
+            }
     }
     
     private func onStart() {
@@ -71,4 +75,26 @@ class ImageLoader : ObservableObject {
         cancellable?.cancel()
     }
     
+    private func compressImage(_ image: UIImage?) -> UIImage? {
+        guard let image = image else { return nil }
+        
+        let resizer = Resizer(image, xScale: 0.3, yScale: 0.3)
+        
+        let colorFilter = ColorFilter(resizer)
+        colorFilter.update(contrast: 0.9)
+        colorFilter.update(brightness: 0.1)
+        
+        return colorFilter.apply()
+    }
+    
+    private func uncompressImage(_ image: UIImage?) -> UIImage? {
+        guard let image = image else { return nil }
+        
+        let resizer = Resizer(image, xScale: 0.6, yScale: 0.6)
+        
+        let colorFilter = ColorFilter(resizer)
+        colorFilter.update(contrast: 1)
+        
+        return colorFilter.apply()
+    }
 }

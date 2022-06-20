@@ -26,6 +26,7 @@
 		057EB47526CD0516003B7203 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057EB47426CD0516003B7203 /* Extensions.swift */; };
 		057EB47826CD0601003B7203 /* FeedInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057EB47726CD0601003B7203 /* FeedInfo.swift */; };
 		057EB47A26CD091C003B7203 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057EB47926CD091C003B7203 /* NewsItem.swift */; };
+		057EC0872860FB7900FF0341 /* ImageDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057EC0862860FB7900FF0341 /* ImageDecorator.swift */; };
 		05BBB0B326CE767A005326A7 /* LoadDataFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BBB0B226CE767A005326A7 /* LoadDataFunc.swift */; };
 		05E00DF726E77CB800C543FC /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E00DF626E77CB800C543FC /* LocalizationService.swift */; };
 		05E00DF926E77EFC00C543FC /* LocalizeStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E00DF826E77EFC00C543FC /* LocalizeStringExtension.swift */; };
@@ -56,6 +57,7 @@
 		057EB47426CD0516003B7203 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		057EB47726CD0601003B7203 /* FeedInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInfo.swift; sourceTree = "<group>"; };
 		057EB47926CD091C003B7203 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		057EC0862860FB7900FF0341 /* ImageDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDecorator.swift; sourceTree = "<group>"; };
 		05BBB0B226CE767A005326A7 /* LoadDataFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataFunc.swift; sourceTree = "<group>"; };
 		05E00DF626E77CB800C543FC /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
 		05E00DF826E77EFC00C543FC /* LocalizeStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeStringExtension.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				051C159126D8E2D70077BBBC /* ImageCache.swift */,
+				057EC0862860FB7900FF0341 /* ImageDecorator.swift */,
 				0555692A26DE9CD800D2F754 /* DB_Manager.swift */,
 				050E6F8F26D7FC6D007548D7 /* ImageLoader.swift */,
 				051C159326D8E6670077BBBC /* EnvironmentValues+ImageCacheKey.swift */,
@@ -302,6 +305,7 @@
 				051C159226D8E2D70077BBBC /* ImageCache.swift in Sources */,
 				05E00DF726E77CB800C543FC /* LocalizationService.swift in Sources */,
 				05E00DF926E77EFC00C543FC /* LocalizeStringExtension.swift in Sources */,
+				057EC0872860FB7900FF0341 /* ImageDecorator.swift in Sources */,
 				05163DFB26CA6CA900EDBFE6 /* FeedListView.swift in Sources */,
 				05BBB0B326CE767A005326A7 /* LoadDataFunc.swift in Sources */,
 				052D2B3826EB618700BE50BC /* AllTabsView.swift in Sources */,
