@@ -36,7 +36,7 @@ class ImageLoader : ObservableObject {
         guard !isLoading else {return}
         
         if let image = cache?[url] {
-            self.image = uncompressImage(image)
+            self.image = compressImage(image)
             return
         }
         
@@ -54,7 +54,7 @@ class ImageLoader : ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] in
                 if let image = $0 {
-                    self?.image = self?.compressImage(image)
+                    self?.image = self?.uncompressImage(image)
                 }
             }
     }

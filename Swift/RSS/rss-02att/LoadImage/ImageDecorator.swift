@@ -1,10 +1,3 @@
-//
-//  ImageDecorator.swift
-//  rss-02att
-//
-//  Created by Mykhailo Zorin on 20.06.2022.
-//
-
 import Foundation
 import UIKit
 
